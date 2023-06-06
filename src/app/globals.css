@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Angkor&family=Galada&family=Lemon&family=Lily+Script+One&family=Notable&family=Oregano&family=Pirata+One&family=Sail&family=UnifrakturCook:wght@700&display=swap');
+
+/*fonte para h1 ate h6*/
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
+
+
+/*font para ul li p */
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Oswald:wght@500&display=swap');
+
+
+:root {
+  --primary-color: #0a1128;
+  --white-color: #ffffff;
+  --light-gray-color: #3d3d3d9d;
+  --secondary-color: crimson;
+  --gap: 3rem;
+
+
+  --fontOne: 'Angkor', cursive;
+  --fontTwo: 'Galada', cursive;
+  --fontThree: 'Lily Script One', cursive;
+  --fontFour: 'Lemon', cursive;
+  --fontFive: 'Notable', sans-serif;
+  --fontSix: 'Oregano', cursive;
+  --fontSeven: 'Pirata One', cursive;
+  --fontEight: 'Sail', cursive;
+  --fontNine: 'UnifrakturCook', cursive;
+
+}
+
+/*----CLASSES ESPECIAIS----*/
+
+.bodySection {
+  position: sticky;
+  padding: 5em;
+  height: fit-content;
+
+
+}
+
+.bgSection {
+  z-index: -1000;
+  object-fit: cover;
+}
+
+.shadowBox {
+  box-shadow: 10px 10px 20px #0c0101;
+}
+
+.spacingLarge {
+  height: 200px;
+}
+
+/*CLASSES*/
+.main-content {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: var(--gap);
+}
+
+
+
+
+
+
+.block {
+  display: block;
+}
+
+.under {
+  z-index: 100
+}
+
+.paddingL1 {
+  padding-left: 0.5em;
+}
+
+.padding5 {
+  padding: 15px;
+}
+
+.section {
+  min-height: 400px;
+}
+
+.fontFamilyEigth {
+  font-family: var(--fontTwo);
+  letter-spacing: 1px;
+
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 3em;
+  justify-items: center;
+}
+
+.border {
+  display: grid;
+  border-top-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+  height: 205px;
+  width: 240px;
+  background: #059EEB;
+  justify-items: center;
+  justify-content: center;
+  align-content: stretch;
+  align-items: stretch;
+  transition: all 300ms ease-in;
+}
+
+.grid :hover {
+  background: #860CF5;
+  color: var(--primary-color);
+  border-top-right-radius: 30%;
+  border-bottom-left-radius: 30%;
+  border-top-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+
+}
+
+
+
+
+/*--------BACKGROUNDS-------*/
+.white-bg {
+  background: white;
+}
+
+
+
+/*LOGO JEST*/
+
+.jest {
+  color: black;
+  background: #3cff00;
+  height: fit-content;
+  width: fit-content;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+
+@media (max-width: 801px) {
+  body {
+    font-size: 5%;
+  }
+
+  .gridHistAll {
+    display: grid;
+
+  }
+  .gridHist {
+    grid-template-columns: (1, 1fr);
+
+  }
+}
+
+

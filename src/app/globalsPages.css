@@ -1,0 +1,186 @@
+/*-----HOME------*/
+.histVI div p {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/*------HABILIDADES------*/
+
+.gridHistAll {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2em;
+  grid-column-gap: 2em;
+}
+
+.gridHist {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 3em;
+  grid-row-gap: 3em;
+  justify-items: center;
+}
+
+
+.flexHist {
+
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  height: 105px;
+  width: 140px;
+  background: #059EEB;
+
+  border-top-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+  transition: all 300ms cubic-bezier(0.03, 1.49, 1, 0.96);
+}
+
+.gridHist :hover {
+  background: #860CF5;
+  color: var(--primary-color);
+  border-top-right-radius: 30%;
+  border-bottom-left-radius: 30%;
+  border-top-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+
+}
+
+
+.flexHist p {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+
+
+/*---PRESENTATION---*/
+.titlePrinc {
+  letter-spacing: 2px;
+  color: black;
+  font-family: var(--fontThree);
+  text-shadow: 1px 1px 5px white;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  height: 200px;
+}
+
+.imagePositionPresentation {
+  display: flex;
+  z-index: -1000;
+  object-fit: cover;
+}
+
+
+/*-----CERTIFICADOS-----*/
+.hoverCertAlg :hover {
+  width: 800px;
+  height: 590px;
+}
+
+
+
+
+/*-------CONTATO-------*/
+.gridContato {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+.borderContato {
+  display: grid;
+  justify-items: center;
+}
+
+.hoverLinkedin :hover {
+  padding: 10px;
+  background: #ffffff;
+  color: black;
+  border-radius: 3px;
+  font-weight: bold;
+  box-shadow: 10px 10px 20px #0c0101;
+}
+
+.hoverGitHub :hover {
+  padding: 10px;
+  background: #ffffff;
+  color: black;
+  border-radius: 50%;
+  font-weight: bold;
+  box-shadow: 10px 10px 20px #0c0101;
+}
+
+.imgWhats {
+  background: green;
+  padding: 10px;
+}
+
+.borderContato a.hoverWhats :hover {
+  background: #ff6701;
+  padding: 10px;
+  box-shadow: 10px 10px 20px #0c0101;
+
+}
+
+.bgCelular {
+  background: black;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.borderContato div.hoverCel :hover {
+  background: #ffffff;
+  color: black;
+
+  font-weight: bold;
+  box-shadow: 10px 10px 20px #0c0101;
+}
+
+
+
+/*----FOOTER------*/
+
+.footerPosition {
+  position: sticky;
+
+  height: fit-content;
+  background-color: black;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+section.footerPosition div.gridFooter div p a {
+  color: var(--white-color);
+  font-size: 0.7em;
+}
+
+.gridFooter {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+
+}
+
+.box1 {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 4;
+
+}
+
+section.footerPosition div.gridFooter div p .titleFooter {
+  color: var(--white-color);
+  font-family: var(--fontFive);
+  font-size: 2.3rem;
+}
